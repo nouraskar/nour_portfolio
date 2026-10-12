@@ -1,0 +1,183 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #fff0f6, #f3e8ff, #ffffff);
+  color: #30233d;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 20px 10px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+nav a {
+  color: #624078;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav .logo {
+  color: #d63384;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 20px 80px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ff70a6, #9b5de5);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  box-shadow: 0 10px 30px #d6338440;
+}
+
+.welcome, .tag {
+  color: #c04485;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(36px, 8vw, 58px);
+  line-height: 1.3;
+  margin: 12px 0;
+}
+
+h1 span, h2 span {
+  color: #c04485;
+}
+
+.hero h2 {
+  font-size: 21px;
+  color: #76518b;
+  margin-bottom: 15px;
+}
+
+.intro {
+  max-width: 430px;
+  margin: 0 auto 28px;
+  color: #695e72;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #e64980, #9b5de5);
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 7px 20px #9b5de540;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 55px 22px;
+  text-align: center;
+  scroll-margin-top: 20px;
+}
+
+section h2 {
+  font-size: 32px;
+  margin: 8px 0 20px;
+}
+
+section > p:not(.tag) {
+  color: #695e72;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.card {
+  flex: 1 1 180px;
+  padding: 25px 15px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #f0d9ed;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px #70408010;
+}
+
+.card h3 {
+  margin: 8px 0;
+  color: #8c429e;
+}
+
+.card p {
+  font-size: 14px;
+  color: #76677e;
+}
+
+.project {
+  max-width: 420px;
+  margin: 20px auto 0;
+}
+
+.pill {
+  display: inline-block;
+  margin: 12px 3px 0;
+  padding: 4px 12px;
+  background: #fce0ed;
+  color: #ad3675;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  background: #352542;
+  color: #fff0f6;
+  font-size: 13px;
+}
+
+@media (max-width: 480px) {
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding-top: 45px;
+  }
+
+  section {
+    padding: 40px 18px;
+  }
+}
